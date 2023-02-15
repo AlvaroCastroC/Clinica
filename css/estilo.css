@@ -1,0 +1,543 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source sans pro', sans-serif;
+}
+
+/* inicio topo*/
+header{
+    width: 100%;
+    background-color: rgba(79, 235, 222, 0.877);
+}
+
+.topo{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo div{
+    margin: 0 10px;
+}
+.topo div img{
+    height: 50px;
+}
+
+.link-topo ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.link-topo ul li{
+    margin-left: 10px;
+}
+
+.link-topo ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 15px;
+}
+
+.link-topo a:hover{
+    color: rgb(6, 119, 248);
+    font-weight: 700;
+
+}
+
+/* fim topo */
+
+/* inicio conteudo */
+
+main{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*inicio background*/
+.imagem-fundo{
+    background-image: url('../assets/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.imagem-fundo .titulo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+.imagem-fundo .titulo h1{
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+
+/*fim background*/
+
+/*inicio do conteudo*/ 
+
+.sobre, .especialidades, .contato{
+    max-width: 1024px;
+    margin: 50px auto;
+ }
+
+/* inicio sobre */
+ .conteudo-principal{
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+ }
+
+ .sobre .conteudo-sobre{
+    width: 60vw;
+    margin: 0 auto;
+ }
+
+ .sobre 
+ .conteudo-sobre 
+ .conteudo-sobre-alinhado{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+ }
+
+ .sobre 
+ .conteudo-sobre 
+ .conteudo-sobre-alinhado img{
+   width: 25vw; 
+   height: 30vh;
+   object-fit: contain;
+ }
+
+ .sobre 
+ .conteudo-sobre
+ .conteudo-sobre-alinhado h4{
+    font-weight: 500;
+    margin-top: 50px;
+ }
+
+ /* fim sobre */
+
+.conteudo-texto{
+    width: 60%;
+    margin: 0 auto;
+ }
+
+ /* inicio especialidades */
+.conteudo-imagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+ .conteudo-imagens img{
+    width: 300px;
+    height: 200px;
+ }
+
+ .imagens-card{
+    box-shadow: 0 0 10px 1px rgba(37, 37, 37, 0.623);
+    margin: 20px;
+    padding: 0;
+ }
+
+ .imagens-card p{
+    text-align: center;
+    margin: 7px 0;
+ }
+
+ .especialidades a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    background-color: #07ccabee;
+    padding: 10px 5px;
+    border-radius: 5px;
+ }
+
+
+ .especialidades a:hover{
+    font-size: 16px;
+    color: #fff;
+    background-color: #0bf098ee;
+    padding: 12px 8px;
+    
+ }
+
+
+ /* fim especialidade*/
+
+ /* inicio contato*/
+ .contato .conteudo-contato{
+    width: 65vw;
+    margin: 0 auto;
+ }
+ .contato p{
+    margin-bottom: 15px;
+ }
+ /*fim contato*/
+
+ /*inicio rodape*/
+ .rodape{
+    background-color: rgb(7, 131, 110);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .rodape .conteudo-rodape{
+    text-align: center;
+ }
+
+ .rodape .conteudo-rodape img{
+    width: 100px;
+    object-fit: cover;
+    
+ }
+
+ .rodape .conteudo-rodape p{
+    color:#fff;
+    font-size: 14px;;
+ }
+
+ @media only screen and (min-width: 320px) and (max-width: 425px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .topo{
+        max-width: 425px; 
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .topo div{
+        padding: 10px 0;
+    }
+
+
+    .link-topo ul{
+        justify-content: space-between;
+        border-top: 1px solid rgba(0, 0, 0, 0.247);
+        padding-top: 5px;
+    }
+    
+    .link-topo ul li{
+        margin: 0 15px;
+    }
+    
+
+    .link-topo ul li a{
+        font-size: 12px;
+    }
+
+    .link-topo a:hover{
+        font-size: 16px;
+        
+    }
+
+    .sobre, .especialidades, .contato {
+        max-width: 420px;
+        margin: 50px auto;
+    }
+
+    /* inicio background*/
+    .imagem-fundo{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .imagem-fundo 
+    .titulo{
+        max-width: 425px;
+        
+    }
+    
+    
+    .imagem-fundo 
+    .titulo 
+    h1{
+        font-size: 16px;
+    }
+    /* fim background*/
+
+
+    .conteudo-principal{
+        max-width: 420px;
+        margin: 0 auto;
+        text-align: center;
+     }
+    
+     /* inicio sobre*/
+     .sobre 
+     .conteudo-sobre{
+        min-width: 320px;
+        margin: 0 auto;
+     }
+
+     
+     h2{
+        font-size: 16px;
+        margin-bottom: 15px;
+     }
+
+     p{
+        font-size: 12px;
+     }
+
+     .sobre 
+     .conteudo-sobre 
+     .conteudo-sobre-alinhado 
+     img{
+        display: none;
+     }
+
+     .sobre
+     .conteudo-sobre 
+     .conteudo-sobre-alinhado 
+     h4{
+        font-size: 13px;
+        margin-bottom: 15px;
+        text-align: center;
+        
+    }
+
+    .conteudo-sobre-alinhado ul{
+        min-width: 320px;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+
+    .conteudo-sobre-alinhado ul li {
+        margin-left: 15%;
+    }
+
+    /* fim sobre*/
+
+    /* inicio especialidades*/
+    .especialidades .conteudo-texto{
+        width: 95vw;
+    }
+
+
+    .conteudo-imagens
+    .imagens-card img{
+        width: 245px;
+        height: 150px;
+    }
+    /* fim especialidades*/
+
+    /* inicio contato*/
+    iframe{
+        width: 95%;
+        height: 300px;
+    }
+    
+    .contato .conteudo-contato{
+        width: 90vw;
+        margin: 0 auto;
+     }
+    
+     /* fim contato*/
+
+     /* incio rodape*/
+
+     .rodape .conteudo-rodape{
+        width: 75%;
+        margin: 0 auto;
+     }
+     .rodape .conteudo-rodape img{
+        width: 60px;
+        object-fit: cover;
+     }
+
+     .rodape .conteudo-rodape p{
+        margin-bottom: 10px;
+        font-size: 10px;
+     }
+
+     /* fim rodape*/
+
+
+
+
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+      /* inicio background */
+    @media only screen and (min-width: 426px) and (max-width: 560px){
+        .imagem-fundo {
+            height: 35vh;
+            width: 100%;
+        }
+
+        .imagem-fundo 
+        .titulo 
+        h1{
+            font-size: 22px;
+        }
+    }
+
+    @media only screen and (min-width: 561px) and (max-width: 768px){
+        .imagem-fundo {
+            height: 45vh;
+            width: 100vw;
+        }
+
+        .imagem-fundo 
+        .titulo 
+        h1{
+            font-size: 24px;
+        }
+    }
+
+     /* fim background */
+
+     /* inicio sobre */
+    .sobre, .especialidades, .contato {
+        max-width: 768px;
+        margin: 50px auto;
+    }
+
+
+    .sobre 
+     .conteudo-sobre 
+     .conteudo-sobre-alinhado 
+     img{
+        display: none;
+     }
+
+     .conteudo-principal{
+        max-width: 768px;
+        margin: 0 auto;
+        text-align: center;
+     }
+    
+     /* inicio sobre*/
+     .sobre 
+     .conteudo-sobre{
+        min-width: 426px;
+        margin: 0 auto;
+     }
+
+     
+     h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+     }
+
+     p{
+        font-size: 16px;
+     }
+
+     .sobre 
+     .conteudo-sobre 
+     .conteudo-sobre-alinhado 
+     img{
+        display: none;
+     }
+
+     .sobre
+     .conteudo-sobre 
+     .conteudo-sobre-alinhado 
+     h4{
+        font-size: 16px;
+        margin-bottom: 15px;
+        text-align: center;
+        
+    }
+
+    .conteudo-sobre-alinhado ul{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+     /* fim sobre*/
+
+     /* inicio especialidades*/
+    .especialidades .conteudo-texto{
+        min-width: 426px;
+    }
+
+
+    .conteudo-imagens
+    .imagens-card img{
+        width: 230px;
+        height: 130px;
+    }
+     /* fim especialidades*/
+
+     /* inicio contato*/
+    iframe{
+        width: 95%;
+        height: 300px;
+    }
+    
+    .contato .conteudo-contato{
+        width: 90%;
+        margin: 0 auto;
+     }
+
+     .contato .conteudo-contato h2{
+        font-size: 20px;
+     }
+
+     .contato .conteudo-contato p{
+        font-size: 14px;
+     }
+
+      /* fim contato*/
+
+      /* incio rodape*/
+
+      .rodape .conteudo-rodape{
+        width: 90%;
+        margin: 0 auto;
+     }
+     .rodape .conteudo-rodape img{
+        width: 90px;
+        object-fit: cover;
+     }
+
+     .rodape .conteudo-rodape p{
+        margin-bottom: 5px;
+        font-size: 10px;
+     }
+
+
+
+}
+
+
+@media only screen and (min-width:1025px){
+    .imagem-fundo{
+        height: 500px;
+    }
+    
+}
